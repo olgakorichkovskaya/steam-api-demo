@@ -1,5 +1,6 @@
 package rewrite;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
@@ -30,4 +31,16 @@ public class Hints {
         Optional<String> longest = names.stream().reduce((s, s2) -> s.length() >= s2.length() ? s : s2);
     }
 
+    //_4_ MinPrice
+    void min(List<Integer> integers) {
+        Optional<Integer> max = integers.stream()
+                .filter(greaterThan(0))
+                .max(Comparator.comparingInt(value -> value));
+    }
+
+    Predicate<Integer> greaterThan(Integer compareTo) {
+        return integer -> integer > compareTo;
+    }
+
+    // _5_Oldest - see class Grouping
 }

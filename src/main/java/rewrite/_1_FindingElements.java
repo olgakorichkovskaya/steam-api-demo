@@ -1,5 +1,7 @@
 package rewrite;
 
+import com.google.common.collect.Lists;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,5 +27,13 @@ public class _1_FindingElements {
         return startWithB;
     }
 
+    public static void main(String[] args) {
+        final List<String> names = Lists.newArrayList("Adam", "Brian", "Nick", "Brayan", "Andy", "Joe");
 
+        System.out.println("Start with B");
+        new _1_FindingElements().startWithB(names).forEach(System.out::println);
+
+        System.out.println("Start with N");
+        new _1_FindingElements().startWithN(names).forEach(System.out::println);
+    }
 }

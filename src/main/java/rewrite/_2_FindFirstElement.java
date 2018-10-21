@@ -1,5 +1,7 @@
 package rewrite;
 
+import com.google.common.collect.Lists;
+
 import java.util.List;
 
 
@@ -20,5 +22,11 @@ public class _2_FindFirstElement {
         } else {
             System.out.println("No elements found.");
         }
+    }
+
+
+    public static void main(String[] args) {
+        final List<String> names = Lists.newArrayList("Adam", "Brian", "Nick", "Brayan", "Andy", "Joe");
+        new _2_FindFirstElement().findFirst(names, "B");
     }
 }
