@@ -37,7 +37,5 @@ public class _5_OldestInGroup {
                 new Person("John", 19));
 
         new _5_OldestInGroup().oldestInEachGroup(people);
-
     }
-
 }
