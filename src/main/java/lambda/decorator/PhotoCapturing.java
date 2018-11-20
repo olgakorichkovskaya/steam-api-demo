@@ -1,4 +1,4 @@
-package advanced.decorator;
+package lambda.decorator;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

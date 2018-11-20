@@ -1,4 +1,4 @@
-package advanced.tests;
+package lambda.tests;
 
 public class Math {
 

@@ -1,4 +1,4 @@
-package advanced.tests;
+package lambda.tests;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

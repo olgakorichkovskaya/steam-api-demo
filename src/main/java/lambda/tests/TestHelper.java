@@ -1,8 +1,4 @@
-package advanced.tests;
-
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+package lambda.tests;
 
 import java.util.Optional;
 
