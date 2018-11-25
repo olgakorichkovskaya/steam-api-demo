@@ -1,9 +1,9 @@
-package lambda.lazy.evalution;
+package lambda.lazy;
 
 import java.util.Random;
 import java.util.function.Supplier;
 
-public class Lazy {
+public class LazyEvaluation {
 
     private static Supplier<Boolean> operation1  = () -> {
         Boolean isNecessaryNextOperation = new Random().nextBoolean();
@@ -17,7 +17,7 @@ public class Lazy {
     };
 
     public static void main(String[] args) {
-        new Lazy().evaluateLazy(operation1, operation2);
+        new LazyEvaluation().evaluateLazy(operation1, operation2);
     }
 
     private void evaluateLazy(Supplier<Boolean> operation1, Supplier<Boolean> operation2) {
