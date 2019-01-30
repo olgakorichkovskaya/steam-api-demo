@@ -52,8 +52,11 @@ public class Sorting {
     }
 
     public static void main(String[] args) {
-        final List<Person> people = Lists.newArrayList(new Person("John", 20), new Person("Sara", 45),
-                new Person("Shakira", 20), new Person("Johnny", 19));
+        final List<Person> people = Lists.newArrayList(
+                new Person("John", 20),
+                new Person("Sara", 45),
+                new Person("Shakira", 20),
+                new Person("Johnny", 19));
 
         System.out.print("Sorted list: ");
         new Sorting().sortByAgeStream(people);

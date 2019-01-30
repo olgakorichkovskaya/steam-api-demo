@@ -1,10 +1,9 @@
 package rewrite;
 
 import com.google.common.collect.Lists;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import group.sort.Person;
+
+import java.util.*;
 
 public class _6_FlatMap {
 
@@ -19,6 +18,7 @@ public class _6_FlatMap {
 
         final List<String> flatList = convertToFlatList(listsOfList);
         System.out.println("Flat list: " + flatList);
+
 
     }
 
