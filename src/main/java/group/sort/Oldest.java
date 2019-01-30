@@ -1,8 +1,7 @@
-package person;
+package group.sort;
 
 import com.google.common.collect.Lists;
 
-import java.util.Comparator;
 import java.util.List;
 
 import static java.util.Comparator.comparingInt;
@@ -29,8 +28,11 @@ public class Oldest {
     }
 
     public static void main(String[] args) {
-        final List<Person> people = Lists.newArrayList(new Person("John", 20), new Person("Sara", 115),
-                new Person("Shakira", 20), new Person("Johnny", 19));
+        final List<Person> people = Lists.newArrayList(
+                new Person("John", 20),
+                new Person("Sara", 115),
+                new Person("Shakira", 20),
+                new Person("Johnny", 19));
 
         findOldest(people);
 

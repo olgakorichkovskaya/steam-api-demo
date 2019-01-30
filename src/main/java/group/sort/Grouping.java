@@ -1,4 +1,4 @@
-package person;
+package group.sort;
 
 import com.google.common.collect.Lists;
 
@@ -12,7 +12,8 @@ import java.util.stream.Collectors;
 
 public class Grouping {
 
-    private static Function<Person, Character> getFirstLetter = person -> person.getName().charAt(0);
+    private static Function<Person, Character> getFirstLetter
+            = person -> person.getName().charAt(0);
 
     private static void groupByFirstLetter(List<Person> people) {
         final Map<Character, List<Person>> byFirstLetter =
@@ -30,7 +31,8 @@ public class Grouping {
     }
 
     public static void main(String[] args) {
-        final List<Person> people = Lists.newArrayList(new Person("John", 20),
+        final List<Person> people = Lists.newArrayList(
+                new Person("John", 20),
                 new Person("Sara", 45),
                 new Person("Sara", 15),
                 new Person("Shakira", 20),

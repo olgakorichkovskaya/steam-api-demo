@@ -1,8 +1,7 @@
-package person;
+package group.sort;
 
 import com.google.common.collect.Lists;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -58,7 +57,6 @@ public class Sorting {
 
         System.out.print("Sorted list: ");
         new Sorting().sortByAgeStream(people);
-
         System.out.println("Original list: " + people);
 
         System.out.print("\nSorted list: ");

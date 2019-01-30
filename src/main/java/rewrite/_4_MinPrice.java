@@ -6,8 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
 
-import java.lang.reflect.Field;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -67,7 +65,7 @@ public class _4_MinPrice {
     }
 }
 
-@ToString(exclude ={ "currency"})
+@ToString(exclude = {"currency"})
 @Getter
 @AllArgsConstructor
 class Price {

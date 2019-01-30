@@ -1,14 +1,12 @@
 package rewrite;
 
 import com.google.common.collect.Lists;
-import person.Person;
+import group.sort.Person;
 
 import java.util.*;
 import java.util.function.Function;
 
 public class _5_OldestInGroup {
-
-    private static Function<Person, Character> getFirstLetter = person -> person.getName().charAt(0);
 
     private void oldestInEachGroup(List<Person> people) {
         //people grouped by first letter
@@ -29,13 +27,14 @@ public class _5_OldestInGroup {
         System.out.println("Oldest in each group: " + oldestInEachGroup);
     }
 
+    private static Function<Person, Character> getFirstLetter = person -> person.getName().charAt(0);
+
     public static void main(String[] args) {
         final List<Person> people = Lists.newArrayList(new Person("John", 20),
                 new Person("Sara", 45),
                 new Person("Sara", 15),
                 new Person("Shakira", 20),
                 new Person("John", 19));
-
         new _5_OldestInGroup().oldestInEachGroup(people);
     }
 }

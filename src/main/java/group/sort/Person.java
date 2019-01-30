@@ -1,4 +1,4 @@
-package person;
+package group.sort;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
